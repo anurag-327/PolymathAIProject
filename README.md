@@ -1,5 +1,5 @@
 # Getting Started
-### This project has been submitted by Anurag Srivastav as part of assignment submitted to PlymathAI as my assignment for Next Js Frontend Internship.I would like to thank tanmay sir and PolymathAi for providing me this opportunity.
+ This project has been submitted by Anurag Srivastav as part of assignment to PolymathAI for Next Js Frontend Internship.I would like to thank tanmay sir and PolymathAi for providing me this opportunity.
 
 ## tech Stack 
   1- Next Js - as frontend framework
@@ -13,7 +13,9 @@
    3- Run command " npm run dev " to run project on local machine
 
 ## Description
-    The project involves use of firebase services to setup signup sign and google login facility.It makes use of NewsAPI to fetch top trending news on various categories and also provides user the facility to add a news to bookmark to read later and delete it later after reading.
+    The project involves use of firebase services to setup signup sign and google login facility.
+    It makes use of NewsAPI to fetch top trending news on various categories 
+    and also provides user the facility to add a news to bookmark to read later and delete it later after reading.
 
 ## Screenshots
 ![Screenshot 2023-06-22 022023](https://github.com/anurag-327/PolymathAIProject/assets/98267696/1d95733b-2e3b-4523-bd99-a1c5540fa7ba)
