@@ -32,7 +32,7 @@ export default function Login()
               .then((userCredential) => {
                 setUser(userCredential.user);
                 setLoading(false);
-                router.push("/");
+                router.push("/news");
               })
               .catch((error) => {
                 console.log(error);

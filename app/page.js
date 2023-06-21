@@ -6,12 +6,7 @@ export default function Home() {
   const {globalLoading,setGlobalLoading}=useStore();
   return (
     <>
-      {
-        globalLoading?( <main className="box-content flex flex-col items-center justify-center min-h-screen gap-10">
-          <Loader />
-          <span>Setting Up Dashboard</span>
-        </main>):(<Banner />)
-      }  
+     <Banner />    
     </>
    
   )

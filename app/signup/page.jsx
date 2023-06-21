@@ -34,7 +34,7 @@ export default function Sign_Up()
                 const user = userCredential.user;
                 setUser(user)
                 setLoading(false)
-                router.push("/");
+                router.push("/news");
               })
               .catch((error) => {
                 console.log(error);

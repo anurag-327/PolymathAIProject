@@ -7,6 +7,7 @@ import { useStore } from '@/lib/useStore'
 import { useEffect } from 'react'
 import {onAuthStateChanged } from "firebase/auth";
 import Navbar from '@/components/Navbar'
+import Loader from '@/components/Loader'
 export default function RootLayout({ children }) 
 {
   const {user,setUser,globalLoading,setGlobalLoading}=useStore();
@@ -14,7 +15,7 @@ export default function RootLayout({ children })
   {
        (async function()
        {
-        onAuthStateChanged(auth, (user) => {
+          onAuthStateChanged(auth, (user) => {
           if (user) {
             setUser(user);
             setGlobalLoading(false);
@@ -23,7 +24,11 @@ export default function RootLayout({ children })
             setGlobalLoading(false)
           }
         });
+        
        }())
+
+
+        
   },[])
   return (
     <html lang="en">
@@ -32,8 +37,18 @@ export default function RootLayout({ children })
         <link rel="icon" href='/favicon.ico'></link>
       </head>
       <body className={inter.className}>
-        <Navbar />
-        {children}
+        {
+          globalLoading?(<main className="box-content flex flex-col items-center justify-center min-h-screen gap-10">
+          <Loader />
+          <span>Setting Up Dashboard</span>
+        </main>):(
+            <main className='bg-gradient-to-l from-blue-200 to-orange-100 via-red-200'>
+            <Navbar />
+            {children} 
+            </main>
+          )
+        }
+        
         </body>
     </html>
   )
