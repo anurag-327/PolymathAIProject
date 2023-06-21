@@ -1,16 +1,16 @@
 # Getting Started
  This project has been submitted by Anurag Srivastav as part of assignment to PolymathAI for Next Js Frontend Internship.I would like to thank tanmay sir and PolymathAi for providing me this opportunity.
 
-## tech Stack 
-  1- Next Js - as frontend framework
-  2- Firebase - as backend and authentication service
-  3- Tailwind CSS - for styling
-  4- NewsApi - to fetch top global news and display them on screen
+## Tech Stack used 
+  1- Next Js - as frontend framework <br/>
+  2- Firebase - as backend and authentication service <br/>
+  3- Tailwind CSS - for styling <br/>
+  4- NewsApi - to fetch top global news and display them on screen <br/>
 
 ## Steps to run on local machine
-   1- Clone the repository
-   2- install node dependcies with commnad " npm i "
-   3- Run command " npm run dev " to run project on local machine
+   1- Clone the repository <br/>
+   2- install node dependcies with commnad " npm i " <br/>
+   3- Run command " npm run dev " to run project on local machine <br/>
 
 ## Description
     The project involves use of firebase services to setup signup sign and google login facility.
