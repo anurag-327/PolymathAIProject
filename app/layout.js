@@ -33,7 +33,7 @@ export default function RootLayout({ children })
   return (
     <html lang="en">
       <head>
-        <title>SoloclProject</title>
+        <title>NewsLy</title>
         <link rel="icon" href='/favicon.ico'></link>
       </head>
       <body className={inter.className}>
