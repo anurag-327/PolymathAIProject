@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Getting Started
+### This project has been submitted by Anurag Srivastav as part of assignment submitted to PlymathAI as my assignment for Next Js Frontend Internship.I would like to thank tanmay sir and PolymathAi for providing me this opportunity.
 
-## Getting Started
+## tech Stack 
+  1- Next Js - as frontend framework
+  2- Firebase - as backend and authentication service
+  3- Tailwind CSS - for styling
+  4- NewsApi - to fetch top global news and display them on screen
 
-First, run the development server:
+## Steps to run on local machine
+   1- Clone the repository
+   2- install node dependcies with commnad " npm i "
+   3- Run command " npm run dev " to run project on local machine
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Description
+    The project involves use of firebase services to setup signup sign and google login facility.It makes use of NewsAPI to fetch top trending news on various categories and also provides user the facility to add a news to bookmark to read later and delete it later after reading.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
+![Screenshot 2023-06-22 022023](https://github.com/anurag-327/PolymathAIProject/assets/98267696/1d95733b-2e3b-4523-bd99-a1c5540fa7ba)
+![Screenshot 2023-06-22 022040](https://github.com/anurag-327/PolymathAIProject/assets/98267696/f01e9047-0fcc-4d24-8844-8ffe6dfd0a68)
+![Screenshot 2023-06-22 022109](https://github.com/anurag-327/PolymathAIProject/assets/98267696/7bda741b-79b7-4a7c-9d49-07856850c07a)
+![Screenshot 2023-06-22 022123](https://github.com/anurag-327/PolymathAIProject/assets/98267696/69478d90-fb13-4972-891e-49548b17ec42)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Important Note!
+   1- Due to time constraints, I could not add to much styling to page but i have implementec all functionalities mentioned by you in the assignment.
+   2- This project is hoisted on [Project Link](https://polymath-ai-project.vercel.app/) but due to constraints of News API to work only in developers mode you might not be able access news page on hoisted application and might face security error.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   
+  
+  
