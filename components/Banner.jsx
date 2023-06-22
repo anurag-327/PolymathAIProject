@@ -16,10 +16,10 @@ export default function Banner()
         });
     }
     return (
-        <main className="box-content relative bg-white flex flex-col md:flex-row items-center justify-center overflow-hidden h-[85vh] bg-gradient-to-l from-blue-200 to-orange-200 via-yellow-100 gap-10 p-10">
+        <main className="box-content relative bg-white flex flex-col md:flex-row items-center justify-center overflow-hidden h-auto min-h-screen md:h-[85vh] bg-gradient-to-l from-blue-200 to-orange-200 via-yellow-100 gap-10 p-10">
             <div className="md:w-[40%] w-[90%] text-center md:text-start z-40 mt-32">
                 <h2 className="font-semibold text-transparent text-7xl md:text-white bg-gradient-to-l from-blue-600 to-orange-300 bg-clip-text md:text-8xl font-poppins">NewsLy</h2>
-                <p className="mt-5 mb-3 text-3xl font-semibold  md:text-white md:w-[400px]">Get Top News Headlines at your fingertips<br></br><br></br>Bookmark News to read them later</p>
+                <p className="mt-5 mb-3 text-3xl font-semibold text-black  md:text-white md:w-[400px]">Get Top News Headlines at your fingertips<br></br><br></br>Bookmark News to read them later</p>
                 {
                     user==null?(
                         <div className="flex flex-col gap-5 mt-5 md:flex-row md:gap-6">
