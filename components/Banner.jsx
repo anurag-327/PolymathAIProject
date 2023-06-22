@@ -16,7 +16,10 @@ export default function Banner()
         });
     }
     return (
-        <main className="  md:rounded-br-[20rem] lg:rounded-br-[25rem] xl:rounded-br-[30rem] box-content relative bg-white  flex flex-col md:flex-row items-center justify-center overflow-hidden h-auto min-h-screen md:h-[85vh] bg-gradient-to-l from-blue-600 to-pink-400  gap-10 ">
+        <main className="  md:rounded-br-[20rem] md:rounded-[5rem] lg:rounded-br-[25rem] xl:rounded-br-[30rem] box-content relative bg-white  flex flex-col md:flex-row items-center justify-center overflow-hidden h-auto  md:h-[88vh] md:mt-5 bg-gradient-to-l from-blue-600 to-pink-400  gap-10 ">
+            <div className="absolute bottom-0 w-[400px] h-[400px] z-[1] right-[-12rem] md:rounded-tl-[80rem]  lg:rounded-tl-[25rem] xl:rounded-tl-[30rem] hidden md:block bg-orange-300">
+                 
+            </div>
             <div className="md:w-[45%] w-[90%] md:ml-10 text-center md:text-start z-40 mt-20 md:mt-5 p-10">
                 <h2 className="font-semibold text-transparent text-orange-400 text-7xl md:text-blue-900 bg-gradient-to-l from-blue-600 to-blue-300 bg-clip-text md:text-8xl font-poppins">NewsLy</h2>
                 <p className="mt-5 mb-3 text-3xl font-semibold text-white md:text-white md:w-[400px]">Get Top News Headlines at your fingertips<br></br><br></br>Bookmark News to read them later</p>
