@@ -42,7 +42,7 @@ export default function RootLayout({ children })
           <Loader />
           <span>Setting Up Dashboard</span>
         </main>):(
-            <main className='bg-gradient-to-l from-blue-200 to-orange-100 via-red-200'>
+            <main className=''>
             <Navbar />
             {children} 
             </main>
