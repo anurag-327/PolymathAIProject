@@ -44,21 +44,24 @@ export default function News()
                     var businessreq = new Request(businessurl);
                     var entertainmentreq = new Request(entertainmenturl);
                     const response=await fetch(url);
-                    // const sportsresponse=await fetch(sportsreq);
-                    // const entertainmentresponse=await fetch(entertainmentreq);
-                    // const businessresponse=await fetch(businessreq);
+                    const sportsresponse=await fetch(sportsreq);
+                     const entertainmentresponse=await fetch(entertainmentreq);
+                    const businessresponse=await fetch(businessreq);
                     const data=await response.json();
-                    // const business=await businessresponse.json();
-                    // const entertainment=await entertainmentresponse.json();
-                    // const sports=await sportsresponse.json();
+                    const business=await businessresponse.json();
+                     const entertainment=await entertainmentresponse.json();
+                     const sports=await sportsresponse.json();
                     
                     setLoading(false);
                     if(response.status==200)
-                    setNews(data.articles);
-                    // setBusinessNews(business.articles)
-                    // setEntertainmentNews(entertainment.articles)
-                    // setSportNews(sports.articles)
-                    console.log()
+                    setNews(data.articles)
+                    if(businessresponse.status==200)
+                    setBusinessNews(business.articles)
+                    if(entertainmentresponse.status==200)
+                    setEntertainmentNews(entertainment.articles)
+                    if(sportsresponse.status==200)
+                    setSportNews(sports.articles)
+                    
                     const q = query(collection(db, "Bookmarks"), where("userId", "==", user.uid));
                     const querySnapshot = await getDocs(q);
                     querySnapshot.forEach((doc) => {
