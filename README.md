@@ -31,9 +31,9 @@
   to let browser fetch api allow insecure content over the website.
 
   ###  steps to enable insecure content
-     1-For edge browser visit - > <a href="edge://settings/content/insecureContent?search=insecure">insecure content</a>
-     2-For chrome browser visit - > <a href="chrome://settings/content/insecureContent">insecure content</a>
-     2-For brave browser visit - > <a href="brave://settings/content/insecureContent">insecure content</a>
+     1-For edge browser visit - > [Visit](edge://settings/content/insecureContent?search=insecure)
+     2-For chrome browser visit - > [vivit](chrome://settings/content/insecureContent)
+     2-For brave browser visit - > [visit](brave://settings/content/insecureContent)
 
     add url https://polymath-ai-project.vercel.app/  to ensecure content
 
