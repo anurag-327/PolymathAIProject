@@ -27,8 +27,15 @@
 
 
 ## Important Note!
-   1- Due to time constraints, I could not add to much styling to page but i have implementec all functionalities mentioned by you in the assignment.<br/>
-   2- This project is hoisted on [Project Link](https://polymath-ai-project.vercel.app/) but due to constraints of News API to work only in developers mode you might not be able access news page on hoisted application and might face security error.
+  1- Free version of news api is hoisted over http protocol so browsers might not allow api fetch.
+  to let browser fetch api allow insecure content over the website.
+
+  ###  steps to enable insecure content
+     1-For edge browser visit - > <a href="edge://settings/content/insecureContent?search=insecure">insecure content</a>
+     2-For chrome browser visit - > <a href="chrome://settings/content/insecureContent">insecure content</a>
+     2-For brave browser visit - > <a href="brave://settings/content/insecureContent">insecure content</a>
+
+    add url https://polymath-ai-project.vercel.app/  to ensecure content
 
    
 
