@@ -3,7 +3,7 @@
 
 # Pre Requisites
 ### Important Note!
-  1- Free version of news api is hoisted over http protocol so browsers might not allow api fetch.
+  1- with free version of api's comes lot of restrictions, free version of media stack news api is hoisted over http protocol so browsers might not allow api to fetch data over https fetch.
   to let browser fetch api allow insecure content over the website.
 
   ###  steps to enable insecure content
