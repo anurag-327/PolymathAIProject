@@ -18,10 +18,11 @@
     and also provides user the facility to add a news to bookmark to read later and delete it later after reading.
 
 ## Screenshots
-![Screenshot 2023-06-22 022023](https://github.com/anurag-327/PolymathAIProject/assets/98267696/1d95733b-2e3b-4523-bd99-a1c5540fa7ba)
-![Screenshot 2023-06-22 022040](https://github.com/anurag-327/PolymathAIProject/assets/98267696/f01e9047-0fcc-4d24-8844-8ffe6dfd0a68)
-![Screenshot 2023-06-22 022109](https://github.com/anurag-327/PolymathAIProject/assets/98267696/7bda741b-79b7-4a7c-9d49-07856850c07a)
-![Screenshot 2023-06-22 022123](https://github.com/anurag-327/PolymathAIProject/assets/98267696/69478d90-fb13-4972-891e-49548b17ec42)
+![Uploading Screenshot 2023-06-23 000932.png…]()
+![Screenshot 2023-06-23 000919](https://github.com/anurag-327/PolymathAIProject/assets/98267696/d811418a-fec5-4b1b-af1c-ee05d73fff76)
+![Uploading Screenshot 2023-06-23 000825.png…]()
+
+
 
 ## Important Note!
    1- Due to time constraints, I could not add to much styling to page but i have implementec all functionalities mentioned by you in the assignment.<br/>
