@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "@/Firebase/firebaseconfig";
+import Notification from "@/components/Notification";
 export default function News()
 {
     const router=useRouter();
@@ -58,6 +59,7 @@ export default function News()
     return(
           
         <div className="flex flex-col items-center justify-center gap-4 " >
+            <Notification />
             <div className="relative h-10 w-72 mt-12 md:hidden min-w-[200px]">
               <select onChange={(e) => setSection(e.target.value)} className="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 empty:!bg-red-500 focus:border-2 focus:border-pink-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50">
                 <option  value="all" selected>All</option>
@@ -70,7 +72,7 @@ export default function News()
                 Select a category
               </label>
             </div>
-            <div className="md:w-[800px] hidden md:block  w-[90%] md:flex-row flex-col bg-white text-black box-border z-10   text-lg md:sticky relative  shadow-2xl top-14 justify-center  items-center  font-bold flex mt-5 md:justify-between rounded-tr-lg rounded-tl-lg">
+            <div className="md:w-[800px] hidden md:block  w-[90%] md:flex-row flex-col bg-white text-black box-border z-10   text-lg md:sticky relative  shadow-2xl top-24 justify-center  items-center  font-bold flex mt-5 md:justify-between rounded-tr-lg rounded-tl-lg">
                       <button onClick={() => setSection("all")} className={`${section=="all"?"bg-blue-500 text-white":"bg-white rounded-md border"} p-2 md:w-[19%]  rounded-md`}>All</button>
                       <button onClick={()=> setSection("business")} className={`${section=="business"?"bg-blue-500 text-white":"bg-white border"} p-2 md:w-[19%] rounded-md`}>Business</button>
                       <button onClick={()=> setSection("entertainment")} className={`${section=="entertainment"?"bg-blue-500 text-white":"bg-white border"} p-2 md:w-[23%] rounded-md`}>Entertainment</button>
