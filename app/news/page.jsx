@@ -51,7 +51,9 @@ export default function News()
                     // const business=await businessresponse.json();
                     // const entertainment=await entertainmentresponse.json();
                     // const sports=await sportsresponse.json();
+                    
                     setLoading(false);
+                    if(response.status==200)
                     setNews(data.articles);
                     // setBusinessNews(business.articles)
                     // setEntertainmentNews(entertainment.articles)
