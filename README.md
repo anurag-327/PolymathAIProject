@@ -1,6 +1,19 @@
 # Getting Started
  This project has been submitted by Anurag Srivastav as part of assignment to PolymathAI for Next Js Frontend Internship.I would like to thank tanmay sir and PolymathAi for providing me this opportunity.
 
+# Pre Requisites
+### Important Note!
+  1- Free version of news api is hoisted over http protocol so browsers might not allow api fetch.
+  to let browser fetch api allow insecure content over the website.
+
+  ###  steps to enable insecure content
+     1-For edge browser visit - > (edge://settings/content/insecureContent?search=insecure)
+     2-For chrome browser visit - > (chrome://settings/content/insecureContent)
+     2-For brave browser visit - > (brave://settings/content/insecureContent)
+
+    add url https://polymath-ai-project.vercel.app/  to ensecure content
+
+
 ## Tech Stack used 
   1- Next Js - as frontend framework <br/>
   2- Firebase - as backend and authentication service <br/>
@@ -26,16 +39,6 @@
 
 
 
-## Important Note!
-  1- Free version of news api is hoisted over http protocol so browsers might not allow api fetch.
-  to let browser fetch api allow insecure content over the website.
-
-  ###  steps to enable insecure content
-     1-For edge browser visit - > [Visit](edge://settings/content/insecureContent?search=insecure)
-     2-For chrome browser visit - > [vivit](chrome://settings/content/insecureContent)
-     2-For brave browser visit - > <brave://settings/content/insecureContent)>
-
-    add url https://polymath-ai-project.vercel.app/  to ensecure content
 
    
 
