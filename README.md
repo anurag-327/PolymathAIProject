@@ -18,7 +18,7 @@
   1- Next Js - as frontend framework <br/>
   2- Firebase - as backend and authentication service <br/>
   3- Tailwind CSS - for styling <br/>
-  4- NewsApi - to fetch top global news and display them on screen <br/>
+  4- Mediastack api - to fetch top global news and display them on screen <br/>
 
 ## Steps to run on local machine
    1- Clone the repository <br/>
