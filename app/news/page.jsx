@@ -116,8 +116,8 @@ export default function News()
                                 <p className="text-2xl font-bold">Steps to enable insecure content</p>
                                 <div className="font-semibold">
                                     <p>For edge visit : <a className="text-blue-600 underline" >edge://settings/content/insecureContent</a></p>
-                                    <p>For chrome visit : <a className="text-blue-600 underline" >edge://settings/content/insecureContent</a></p>
-                                    <p>For brave visit : <a className="text-blue-600 underline" >edge://settings/content/insecureContent</a></p>
+                                    <p>For chrome visit : <a className="text-blue-600 underline" >chrome://settings/content/insecureContent</a></p>
+                                    <p>For brave visit : <a className="text-blue-600 underline" >brave://settings/content/insecureContent</a></p>
                                 </div>
                                 <div>
                                      <p>And this URl <span className="font-semibold">https://polymath-ai-project.vercel.app/</span> to insecure content</p>
