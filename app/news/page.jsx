@@ -12,6 +12,7 @@ export default function News()
     const router=useRouter();
     const {user,setBookmark,bookmark}=useStore();
     const [news,setNews]=useState([]);
+    const [apiError,setApiError]=useState();
     const [businessnews,setBusinessNews]=useState([]);
     const [entertainmentnews,setEntertainmentNews]=useState([]);
     const [sportsnews,setSportNews]=useState([]);
@@ -29,6 +30,7 @@ export default function News()
     }
     useEffect(()=>
     {
+        setApiError(false);
         if(!user)
         {
             router.push("/signin");    
@@ -46,7 +48,11 @@ export default function News()
                            setEntertainmentNews(newsdata.data.filter((data) => data.category=="entertanment"))
                            setBusinessNews(newsdata.data.filter((data) => data.category=="business"))
                            setSportNews(newsdata.data.filter((data) => data.category=="sports"))
-                       }                       
+                       }  
+                       else 
+                       {
+                          setApiError(true);
+                       }                     
                      getBookmarks();
                 } catch (error) {
                     setLoading(false);
@@ -58,7 +64,7 @@ export default function News()
     },[user])
     return(
           
-        <div className="flex flex-col items-center justify-center gap-4 " >
+        <div className="relative flex flex-col items-center justify-center gap-4 " >
             <Notification />
             <div className="relative h-10 w-72 mt-12 md:hidden min-w-[200px]">
               <select onChange={(e) => setSection(e.target.value)} className="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 empty:!bg-red-500 focus:border-2 focus:border-pink-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50">
@@ -101,6 +107,21 @@ export default function News()
                         {
                             section==="bookmarks"&&(
                                 bookmark.length>0?bookmark.map((data)=> data.image&&<NewsComponent key={data.title} data={data} section={section} />):<div className="mt-10 text-2xl font-bold text-green-600">No Item in your Bookmarks</div>)
+                        }
+                        {
+                            apiError&&<div className="w-[90%] border max-w-[500px] dark:shadow-md text-black md:max-w-[700px] md:min-w-[650px] justify-center items-center shadow-md border-gray-300 bg-white rounded-md p-3 flex flex-col md:w-[60%] gap-2">
+                                <h2 className="text-3xl font-bold text-red-600">Note!</h2>
+                                <h3> with free version of api's comes lot of restrictions, free version of media stack news api is hoisted over http protocol so browsers might not allow api to fetch data over https. to let browser fetch api allow insecure content over this website.</h3>
+                                <p className="text-2xl font-bold">Steps to enable insecure content</p>
+                                <div className="font-semibold">
+                                    <p>For edge visit : <a className="text-blue-600 underline" >edge://settings/content/insecureContent</a></p>
+                                    <p>For chrome visit : <a className="text-blue-600 underline" >edge://settings/content/insecureContent</a></p>
+                                    <p>For brave visit : <a className="text-blue-600 underline" >edge://settings/content/insecureContent</a></p>
+                                </div>
+                                <div>
+                                     <p>And this URl <span className="font-semibold">https://polymath-ai-project.vercel.app/</span> to insecure content</p>
+                                </div>
+                            </div>
                         }
                     </div>
                     )
