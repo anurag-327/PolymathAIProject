@@ -49,6 +49,9 @@ export default function News()
                            setBusinessNews(newsdata.data.filter((data) => data.category=="business"))
                            setSportNews(newsdata.data.filter((data) => data.category=="sports"))
                        }  
+                       else{
+                        setApiError(true);
+                       }
                                           
                      getBookmarks();
                 } catch (error) {
